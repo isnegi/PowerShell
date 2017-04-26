@@ -11,4 +11,9 @@ How to configure and use the script file:
 5. If your powershell throws PSSecurityException, Type "set-executionpolicy remotesigned" and hit enter. Now you should be able to run unknown scripts from your powershell terminal.
 6. Now you'll see your script running, and checking every IP in a loop.
 
+Note
+The Default Execution Policy is set to restricted, you can see it by typing "Get-ExecutionPolicy". You should type the following to make it go to unrestricted mode:
+  Set-ExecutionPolicy unrestricted
+
+
 ----end----
